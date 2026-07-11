@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import "./(website)/globals.css";
-import { Nunito, Nunito_Sans, Geist } from "next/font/google";
+import { Nunito, Nunito_Sans} from "next/font/google";
 import clsx from "clsx";
 import { cn } from "@/lib/utils";
-
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -33,9 +31,9 @@ export default function RootLayout({
 
 return (
 
-<html lang="en" suppressHydrationWarning className={cn("font-sans", geist.variable)}>
+<html lang="en" suppressHydrationWarning className={clsx(nunito.className, nunito_sans.className, "font-sans antialiased")}>
 
-<body className={clsx(nunito.className, nunito_sans.className, "font-sans antialiased")}>
+<body className={cn("min-h-screen bg-[#030712] text-white", "bg-linear-to-b from-[#030712] to-[#0f172a]")}>
   {children}
 </body>
 

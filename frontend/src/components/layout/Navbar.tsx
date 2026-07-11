@@ -74,7 +74,7 @@ transition
 </div>
 <Link
   href="/contact?quote=1"
-  className="bg-primary hover:brightness-110 text-white px-6 py-3 rounded-full font-bold uppercase tracking-widest text-[10px] sm:text-[11px] shadow-lg transition-all flex items-center gap-2 group flex-shrink-0"
+  className="bg-primary hover:brightness-110 text-white px-6 py-3 rounded-full font-bold uppercase tracking-widest text-[10px] sm:text-[11px] shadow-lg transition-all flex items-center gap-2 group shrink-0"
 >
   Get Quote                   
 </Link>

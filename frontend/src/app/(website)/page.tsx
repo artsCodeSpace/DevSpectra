@@ -8,8 +8,8 @@ export default function HeroSection() {
     <section className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden bg-[#030712] text-white px-4">
       {/* Background Gradients */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-500/40 rounded-full blur-[120px]" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-500/30 rounded-full blur-[120px]" />
+        <div className="absolute top-[-10%] left-[-10%] w-125 h-125 bg-purple-500/40 rounded-full blur-[120px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-125 h-125 bg-blue-500/30 rounded-full blur-[120px]" />
       </div>
       {/* Content Container */}
       <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8">
@@ -20,7 +20,7 @@ export default function HeroSection() {
           Building
           <br />
 
-          <span className="bg-gradient-to-r from-violet-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-violet-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
             digital experiences
           </span>
 

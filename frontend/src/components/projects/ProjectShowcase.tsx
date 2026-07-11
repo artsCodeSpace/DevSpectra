@@ -4,12 +4,20 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 
+type Project = {
+	title: string;
+	type: string;
+	description: string;
+	tags: string[];
+	image: string;
+};
+
 export default function ProjectShowcase({
-project,
-index
+	project,
+	index
 }:{
-project:any;
-index:number;
+	project: Project;
+	index: number;
 }){
 
 

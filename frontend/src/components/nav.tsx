@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import ThemeToggle from "./theme-toggle";
 
 const links = [
   { href: "/", label: "Home" },
@@ -27,7 +26,7 @@ export default function Nav() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <ThemeToggle />
+          
           <Link href="/services" className="hidden rounded-full bg-ink px-4 py-2 text-sm font-medium text-bg transition hover:bg-accent md:inline-block">
             Get a quote
           </Link>

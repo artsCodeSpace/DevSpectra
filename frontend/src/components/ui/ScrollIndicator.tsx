@@ -30,7 +30,7 @@ export default function ScrollIndicator() {
         className="
           h-10
           w-px
-          bg-gradient-to-b
+          bg-linear-to-b
           from-slate-400
           to-transparent
         "
