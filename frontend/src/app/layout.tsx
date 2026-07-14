@@ -31,7 +31,7 @@ export default function RootLayout({
 
 return (
 
-<html lang="en" suppressHydrationWarning className={clsx(nunito.className, nunito_sans.className, "font-sans antialiased")}>
+<html lang="en" suppressHydrationWarning className={clsx(nunito.variable, nunito_sans.variable, "font-sans antialiased")}>
 
 <body className={cn("min-h-screen bg-[#030712] text-white", "bg-linear-to-b from-[#030712] to-[#0f172a]")}>
   {children}

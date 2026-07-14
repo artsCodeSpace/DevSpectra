@@ -59,10 +59,10 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   overflow-x: hidden;
   font-family: var(--font-nunito-sans);
-  scroll-behavior:smooth;
+  
 }
 
 body {
