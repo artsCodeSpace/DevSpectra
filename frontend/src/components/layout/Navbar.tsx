@@ -77,7 +77,36 @@ return (
       >
         {isOpen ? <X size={28} /> : <Menu size={28} />}
       </button>
+
+      
     </div>
+    {/* Mobile Menu */}
+    {isOpen && (
+      <div className="lg:hidden border-t border-white/10 bg-background/95 backdrop-blur-xl">
+        <div className="flex flex-col p-6 gap-5">
+
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              className="text-lg hover:text-primary transition"
+            >
+              {link.name}
+            </Link>
+          ))}
+
+          <Link
+            href="/contact?quote=1"
+            onClick={() => setIsOpen(false)}
+            className="mt-2 bg-primary text-white rounded-full py-3 text-center font-bold"
+          >
+            Get Quote
+          </Link>
+
+        </div>
+      </div>
+    )}
   </nav>
 );
 
