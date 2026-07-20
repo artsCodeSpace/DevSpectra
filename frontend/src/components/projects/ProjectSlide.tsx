@@ -4,8 +4,8 @@ import { Project } from "@/data/projects";
 import ProjectContent from "./ProjectContent";
 import ProjectImage from "./ProjectImage";
 import { useRef } from "react";
-import useProjectAnimation from "../hooks/useProjectAnimation";
-import useProjectScroll from "../hooks/useProjectScroll";
+import useProjectAnimation from "../../hooks/useProjectAnimation";
+import useProjectScroll from "../../hooks/useProjectScroll";
 
 interface Props {
   project: Project;

@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { Project } from "@/data/projects";
 import ProjectSlide from "./ProjectSlide";
-import usePinnedProjects from "../hooks/usePinnedProjects";
+import usePinnedProjects from "../../hooks/usePinnedProjects";
 
 interface Props {
   projects: Project[];

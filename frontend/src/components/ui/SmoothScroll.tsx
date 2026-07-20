@@ -29,11 +29,12 @@ export default function SmoothScroll({
     const raf = (time:number) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
-      ScrollTrigger.refresh()
     };
 
 
     requestAnimationFrame(raf);
+
+    ScrollTrigger.refresh();
 
 
     return () => {

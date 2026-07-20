@@ -11,7 +11,7 @@ children:React.ReactNode
 
 
 return (
-
+ 
 <>
 
 <Navbar/>
